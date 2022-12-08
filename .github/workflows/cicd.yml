@@ -1,11 +1,8 @@
 name: Пример непрерывной интеграции
 on: [push]
 jobs:
-<<<<<<< HEAD
   testing:
-=======
-  test-build:
->>>>>>> 26c8a9cd207eb7db0a20ffbeb752becaf4a6709e
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,7 +18,6 @@ jobs:
 
       - name: Testing
         run: python manage.py test
-<<<<<<< HEAD
 
   build-deploy:
     runs-on: ubuntu-latest
@@ -42,5 +38,3 @@ jobs:
         with:
           push: true
           tags: imsiw0990/students:latest
-=======
->>>>>>> 26c8a9cd207eb7db0a20ffbeb752becaf4a6709e
